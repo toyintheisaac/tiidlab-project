@@ -1,10 +1,215 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0; 
+    font-family: "Segoe UI", Roboto,"Helvetica Neue";
+    color:#fff;
     box-sizing: border-box;
 }
+html{
+     font-size: 15px;
+}
 body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    background: #f5f5f5;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+} 
+a:hover{
+    text-decoration: none;
+    color: #4bffa5;;
+}
+.text-green{
+    color: #4bffa5;
+}
+.text-green:hover{
+    color: #089c52;
+}
+.bg-green{
+    color: #4bffa5;
+}
+.bg-green:hover{
+    color: #089c52;
+}
+.bg-darker{
+    background-color: #111312;
+}
+img{
+    width: 100%;
+} /* #6c757d; */
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.middle2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header{
+    height: 650px;
+} 
+.h100{
+    height: 600px; 
+}
+.social-icon{
+    list-style: none;
+}
+.social-icon li{
+    border: 2px solid #089c52;
+    width:50px;
+    height:50px;
+    line-height:50px; 
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.social-icon li:hover{
+    background-color: #089c52;
+}
+section{
+    padding: 70px 0; 
+}
+.divider{
+    width: 100px;
+    margin: 10px auto;
+    border-bottom: 3px solid #4bffa5;
+}
+.divider-left{
+    width: 100px; 
+    border-bottom: 3px solid #4bffa5;
+}
+.mw-300{
+    max-width:300px
+}
+.mw-400{
+    max-width:400px
+}
+.service-icon{
+    font-size: 35px;
+}
+p.card-text{
+    font-size: 15px;
+}
+.cards-bg{
+    background-color: #111312;
+}
+.cards-bg div i{
+    color: #4bffa5;
+}
+.cards-bg:hover{
+    background-color: #4bffa5;
+}
+.cards-bg:hover p{
+    color: #111312;
+}
+.cards-bg:hover h3{
+    color: #111312;
+}
+.cards-bg:hover  div i{
+    color: #089c52;
+}
+.btn-custom{
+    background-color: inherit;
+    border: 2px solid #4bffa5;
+    border-radius: 25px;
+    padding: 9px 17px;
+}
+.btn-custom:hover{
+    background-color: #4bffa5;
+    color:#000;
+    border: 2px solid #4bffa5; 
+}
+.btn-custom2{
+    background-color: #4bffa5;
+    border: 2px solid #4bffa5;
+    border-radius: 25px;
+    padding: 9px 17px;
+} 
+input, textarea{
+    background-color: #000 !important;
+    border:2px solid  #4bffa5;
+    color:white !important;
+} 
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    background-color: #000 !important;
+    border:2px solid  #4bffa5 !important; 
+    color:white !important;
+} 
+
+
+/* About Us Page */
+.info-header{
+    height:300px;
+}
+
+
+
+
+@media (min-width: 100px) { /* xs  */
+    h1{
+        font-size: 3rem;
+        font-weight: bold;  
+    }
+    h2{
+        font-size: 3rem;
+        font-weight: bold;  
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .img2{
+        width: 50%;
+    }
+    .profile-img-container{
+        background-color: #089c52;
+        border-radius: 50%;
+        width:230px;
+        height: 230px;
+        margin: auto;  
+        background-image: url("../img/isaac-toyin.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 92%;
+    } 
+}
+@media (min-width: 768px) { /* sm  */
+    header .dpicture{ 
+        width: 100%;
+    }
+    .img2{
+        width: 90%;
+    }
+    .profile-img-container{
+        background-color:#111312;
+        border-radius: 0;
+        width:280px;
+        height: 550px;
+        margin: auto;  
+        background-image: url("../img/isaac-toyin.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .skill-div{
+        max-width: 80%;
+    }
+}
+@media (min-width: 992px) { /* md  */
+    h1{
+        font-size: 4.5rem;
+        font-weight: bold;  
+    } 
+    h2{
+        font-size: 4.0rem;
+        font-weight: bold;  
+    }
+    p{
+        font-size: 1.25rem;
+    }
 }
