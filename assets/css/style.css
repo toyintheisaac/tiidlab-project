@@ -125,6 +125,18 @@ p.card-text{
     color:#000;
     border: 2px solid #4bffa5; 
 }
+.btn-custom-reverse{
+    background-color: #4bffa5;
+    border: 2px solid #4bffa5;
+    color:#000;
+    border-radius: 25px;
+    padding: 9px 17px;
+}
+.btn-custom-reverse:hover{
+    background-color: #000;
+    color:#4bffa5;
+    border: 2px solid #4bffa5;
+}
 .btn-custom2{
     background-color: #4bffa5;
     border: 2px solid #4bffa5;
