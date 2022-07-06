@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Toyin || Portfolio</title>
 
+	<meta name="keywords" content="Isaac, Toyin, Oluwatoyin, Portfolio, Software Developer, Software, Software Engineer, Backend Developer, Web Developer"/>
+	<meta name="description" content="I'm a Software Engineer with a passionate zeal in software development, I have huge knowledge and proficiency in HTML, CSS, JavaScript/Ajax, Bootstrap, PHP, MySQL, REST APIs and Mobile Responsive Web Development, as well as strong skills and ability in writing clean and efficient code.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Isaac Toyin Portfolio || Homepage" />
+<meta property="og:description" content="I'm a Software Engineer with a passionate zeal in software development, I have huge knowledge and proficiency in HTML, CSS, JavaScript/Ajax, Bootstrap, PHP, MySQL, REST APIs and Mobile Responsive Web Development, as well as strong skills and ability in writing clean and efficient code." />
+<meta property="og:image" content="./assets/img/Isaac-Toyin.JPG" />
+<meta property="og:url" content="isaactoyin.netlify.com" />
+<meta property="og:site_name" content="Isaac Toyin Portfolio" />
+
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/80a6e6b19c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 <body>
 
-<div class="container-fluid sticky-top bg-darker">
+<div class="container-fluid sticky-top bg-darker" id="navbar">
 	<div class="container" >
         <nav class="navbar navbar-expand-md" >
             <!-- Brand -->
@@ -24,15 +35,18 @@
             </button> 
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav  ml-auto">
+                <ul class="navbar-nav  ml-auto">
                     <li class="nav-item">
                         <a class="nav-link " href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#about-me">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -43,7 +57,7 @@
         </div>
 </div>
 
-<header class="bg-darker">
+<header class="bg-darker" id="home">
     <div class="container">
         <div class="d-flex justify-content-center   h100 flex-column flex-md-row"> 
             <div class="align-self-sm-center pt-5 p-sm-3">
@@ -58,13 +72,18 @@
                         <a href="https://github.com/toyintheisaac" target="_blank"><li><i class="fa fa-github"></i></li></a>
                         <a href="https://www.facebook.com/Isaacp.Official" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
                         <a href="https://twitter.com/iam_isaacp" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
-                    </ul>
+                    </ul> 
+        <div class="text-center text-sm-left mt-4">
+            <a href="https://medium.com/@toyintheisaac" class="btn-custom-reverse m-auto text-center d-inline-block " target="_blank">
+                View My Blog
+            </a>
+        </div>
             </div>
         </div>
     </div>
 </header>
 
-<section>
+<section id="my-services">
     <div class="container">
         <h2 class="text-center">My Services</h2>
         <p class="text-center pb-4">Check out my services that could meet your business needs.</p>
@@ -105,7 +124,7 @@
 
 
 
-<section class="bg-darker">
+<section class="bg-darker"  id="about-me">
     <div class="container">
         <div class="row">
              <div class="col">
@@ -122,8 +141,8 @@
                  <h3 class="mb-4">My Profile</h3>
     <p>I'm a Software Engineer with a passionate zeal in software development, I'm currently enrolled in Tiidelab as a software developer. </p>
   
-    <p>I'm currently working with Isaac Technologies as a Backend developer. Am a graduate of Computer Science from Tai Solarin of Education,
-        I loves Music, Traveling and Playing Cheese and COD Game.
+    <p>I'm currently working as a Freelancer. Am a graduate of Computer Science from Tai Solarin of Education,
+        I loves Traveling, Watching Documentary / Nature and Playing Game during my free time. 
     </p>
     
     <h5 class="text-green">Connect with me</h5> 
@@ -140,14 +159,14 @@
 
 
 
-<section class="">
+<section class=""  id="my-skills">
     <div class="container"> 
         <div class="row mt-5">
              <div class="col-md-5">
     <h2 class="text-left">My Skills and Experience</h2>
     <div class="divider-left my-4"></div>
     <p class="text-left pb-4">I have huge knowledge and proficiency in HTML, CSS, JavaScript/Ajax, Bootstrap, PHP, MySQL, REST APIs and Mobile Responsive Web Development, as well as strong skills and ability in writing clean and efficient code.</p>
-        <a href="#" class="btn-custom">
+        <a href="#" class="btn-custom" id="hire-me-now">
             Hire Me Now
         </a>
              </div>
@@ -181,37 +200,60 @@
 
 
 
-<section class="bg-darker">
+<section class="bg-darker"  id="my-work">
     <div class="container"> 
         <div class="row mt-5">
              <div class="col text-center">
     <h2 class="text-center">My Work</h2>
-    <div class="divider my-4"></div> 
+    <div class="divider my-4"></div>
              </div>
         </div>
-        <div class="portfolio d-flex flex-wrap justify-content-center">
-            <div class="mw-300">
-                <div class="p-3">
-                    <img src="./assets/img/chop-remain.png" alt=""  >
+        <div class="portfolio">
+            
+            <div class="cover">
+                <img src="./assets/img/chop-remain.png" alt="" >
+                <div class="overlay">
+                    <div class="text">
+                        <h4>ChopRemain</h4>
+                        <p>Users can make Daily Contribution and Invest In Stocks,  Paystack and flutterwave Api Used for Payments and Auto Save Features. Developed with Bootstrap, Php and Ajax.</p>
+                        <div><a href="http://virtuouscoop.com/chopremain.com/" class="btn-custom-reverse" style="padding:2px 4px;font-size:0.9rem;" target="_blank">
+                            View Project
+                        </a></div>
+                    </div>
                 </div>
             </div>
-            <div class="mw-300">
-                <div class="p-3">
-                    <img src="./assets/img/isaac-tech.png" alt=""  >
+            <div class="cover"> 
+                <img src="./assets/img/isaac-tech.png" alt=""  >
+                <div class="overlay">
+                    <div class="text">
+                        <h4>IsaacTechnologies</h4>
+                        <p>Users search for services and make orders, Live chat with Sellers. request for custom quotes. Paystack Api Used for Payments. <span>Developed</span> with Bootstrap, Php and Ajax.</p>
+                        <div><a href="http://virtuouscoop.com/isaac-tech.com" class="btn-custom-reverse" style="padding:2px 4px;font-size:0.9rem;" target="_blank">
+                            View Project
+                        </a></div>
+                    </div>
                 </div>
             </div>
-            <div class="mw-300">
-                <div class="p-3">
-                    <img src="./assets/img/renewalofword.jpg" alt=""  >
+            <div class="cover"> 
+                <img src="./assets/img/renewalofword.jpg" alt=""  >
+                <div class="overlay">
+                    <div class="text">
+                        <h4>RenewaloftheWord</h4>
+                        <p>Users can write Articles, Read Posted Articles, Like, Save, Comment, and share Article on their social media pages. <span>Developed</span> with Bootstrap, Php and Ajax.</p>
+                        <div><a href="http://virtuouscoop.com/renewaloftheword.com/" class="btn-custom-reverse" style="padding:2px 4px;font-size:0.9rem;" target="_blank">
+                            View Project
+                        </a></div>
+                    </div>
                 </div>
             </div>
+ 
         </div>
     </div>
 </section>
 
 
 
-<section class="">
+<section class="" id="contact-me">
     <div class="container"> 
         <div class="row mt-5">
              <div class="col text-center">
@@ -222,58 +264,60 @@
         </div>
         <div class="portfolio d-flex flex-wrap justify-content-center">
             <div class="mw-400">
-                <a href="https://wa.me/2349067403665">
+                <a href="https://wa.me/2349067403665" target="_blank">
                 <div class="m-3 p-3 bg-darker d-flex flex-wrap">
                     <div class="icon1" style="width:50px;">
                         <i class="fa fa-phone fa-2x text-green"></i>
                     </div>
                     <div class="info">
                         <h5>Give me a call</h5>
-                        <p>Office: <a href="https://wa.me/2349067403665"  class="text-green">+234(0)9067403665</a></p>
+                        <p>Office: <a href="https://wa.me/2349067403665"  target="_blank" class="text-green">+234(0)9067403665</a></p>
                     </div>
                 </div></a>
             </div>
             <div class="mw-400">
-                <a href="mailto:isaactechnologies@gmail.com" >
+                <a href="mailto:isaactechnologies@gmail.com" target="_blank" >
                 <div class="m-3 p-3 bg-darker d-flex flex-wrap">
                     <div class="icon1" style="width:50px;">
                         <i class="fa fa-envelope fa-2x text-green"></i>
                     </div>
                     <div class="info">
                         <h5>Email Me</h5>
-                        <p>Email: <a href="mailto:isaactechnologies@gmail.com" class="text-green">@isaactechnologies</a></p>
+                        <p>Email: <a href="mailto:isaactechnologies@gmail.com"  target="_blank"class="text-green">@isaactechnologies</a></p>
                     </div>
                 </div></a>
             </div> 
+        </div> 
+ 
+<form action=""  class="" onsubmit="return success()">
+    <div class="row mt-4">
+        <div class="col-sm-6"> 
+            <div class="form-group">
+                <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="YourName" required >
+            </div>
         </div>
-        
-        <div class="row mt-4">
-            <div class="col-sm-6"> 
-                <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="YourName" >
-                </div>
+        <div class="col-sm-6"> 
+            <div class="form-group">
+                <input type="email" class="form-control form-control-lg" placeholder="Your Email" name="YourEmail" required >
             </div>
-            <div class="col-sm-6"> 
-                <div class="form-group">
-                    <input type="email" class="form-control form-control-lg" placeholder="Your Email" name="YourEmail" >
-                </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <input type="text" class="form-control form-control-lg" placeholder="Your Subject" name='YourSubject' required >
             </div>
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" placeholder="Your Subject" name='YourSubject' >
-                </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <textarea name="" id="YourMessage" cols="30" rows="10"  class="form-control"  placeholder="Your Message" required></textarea>
             </div>
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <textarea name="" id="YourMessage" cols="30" rows="10"  class="form-control"  placeholder="Your Message"></textarea>
-                </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <button class="btn btn-lg btn-custom2" type="submit">Send Message</button>
             </div>
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <button class="btn btn-lg btn-custom2">Send Message</button>
-                </div>
-            </div>
-       </div>
+        </div>
+    </div>
+</form>
     </div>
 </section>
 
@@ -285,7 +329,7 @@
     <div class="container"> 
         <div class="row mt-5">
              <div class="col-sm-12 text-center">
-    <h2 class="text-center">Contact With Me</h2> 
+    <h2 class="text-center">Connect With Me</h2> 
     <div class="divider my-4"></div> 
              </div>
              <div class="col-sm-12">
@@ -319,5 +363,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
