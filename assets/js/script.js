@@ -18,3 +18,9 @@ window.addEventListener('scroll', function() {
         document.querySelector('#navbar').style.opacity = 1;
     }
 });
+
+
+function success(){
+    window.alert("Thank you for your message. I will get back to you as soon as possible.");
+    window.history.back();
+}
