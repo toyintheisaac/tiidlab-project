@@ -223,12 +223,13 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
 }
 
 /* My Gallery */
+
 .display-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: minmax(150px, 200px);
-    grid-gap:10px; 
-}
+    grid-gap:10px;  
+} 
 .display-grid > div{
     transform: rotate(0deg);
     transition: all 1s ease-in-out;
@@ -248,8 +249,6 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
 .display-grid > :nth-child(3n+3):hover{
     transform: skew(20deg);
 }
-
-
 
 @media (min-width: 100px) { /* xs  */
     h1{
@@ -276,7 +275,26 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 92%;
-    } 
+    }
+
+}
+
+@media (min-width: 490px) { /* sm  */
+    .display-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-auto-rows: minmax(150px, 200px);
+        grid-gap:10px; 
+        grid-template-areas:
+        'firstImg firstImg';
+        ;
+    }
+    .display-grid > div:first-child{
+        grid-area: firstImg;
+    }
+
+/* My Gallery */
+
 }
 @media (min-width: 768px) { /* sm  */
     header .dpicture{ 
@@ -299,6 +317,23 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
     .skill-div{
         max-width: 80%;
     }
+
+    
+    /* My Gallery */
+    .display-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-auto-rows: minmax(150px, 200px);
+        grid-gap:10px; 
+        grid-template-areas:
+        'firstImg . .'
+        'firstImg . .';
+        ;
+    }
+    .display-grid > div:first-child{
+        grid-area: firstImg;
+    }
+
 }
 @media (min-width: 992px) { /* md  */
     h1{
@@ -312,4 +347,20 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
     p{
         font-size: 1.25rem;
     }
+    
+    /* My Gallery */
+    .display-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-auto-rows: minmax(150px, 200px);
+        grid-gap:10px; 
+        grid-template-areas:
+        'firstImg firstImg .'
+        'firstImg firstImg .';
+        ;
+    }
+    .display-grid > div:first-child{
+        grid-area: firstImg;
+    }
+
 }
