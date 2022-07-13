@@ -204,11 +204,11 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
     bottom: 0;  
 }
 .portfolio .text h4{
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: #fff;  
 }
 .portfolio .text p{
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     color: #fff;
 }
 .portfolio .text > div{
@@ -216,7 +216,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
     left:0;
     right:0;
     bottom: 10px;
-    text-align: center;  
+    text-align: center;
 }
 .portfolio .overlay:hover{
     opacity: 0.9;
